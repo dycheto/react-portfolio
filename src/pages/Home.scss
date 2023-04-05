@@ -1,0 +1,90 @@
+.home-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 4rem;
+
+  .home-text-left {
+    max-width: 500px;
+    margin-right: 6rem;
+    margin-left: 6rem;
+    margin-bottom: 120px;
+    text-align: center;
+
+    @media (max-width: 768px) {
+      margin-right: 0;
+      margin-bottom: 2rem;
+    }
+
+    .home-text-header {
+      font-size: 3.5rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+
+      @media (max-width: 768px) {
+        font-size: 2.5rem;
+      }
+    }
+
+    .home-text-about {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+
+      @media (max-width: 768px) {
+        font-size: 1.5rem;
+      }
+    }
+
+    .home-download-button {
+      display: inline-block;
+      background-color: #4c6ef5;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        background-color: #394472;
+      }
+
+      svg {
+        height: 1.5rem;
+        width: 1.5rem;
+        margin-right: 0.75rem;
+      }
+
+      @media (max-width: 768px) {
+        font-size: 1rem;
+        height: 3rem;
+        padding: 1rem 2rem;
+      }
+    }
+  }
+
+  .home-text-right {
+    flex: 1;
+    margin-top: auto;
+    img {
+      max-width: 90%;
+      height: auto;
+    }
+  }
+
+  &--dark {
+    background-color: var(--color-dark);
+
+    .text-white {
+      color: var(--color-white);
+    }
+
+    .home-download-button {
+      background-color: var(--color-primary-dark);
+
+      &:hover {
+        background-color: var(--color-primary-hover-dark);
+      }
+    }
+  }
+}
