@@ -4,12 +4,12 @@ import { motion } from 'framer-motion';
 import { FiArrowDownCircle } from 'react-icons/fi';
 import developerImg from '../images/developer.svg';
 import { useTheme } from '../hooks/useTheme';
-import AboutMe from './AboutMe/AboutMe';
-import Projects from './Projects/Projects';
-import Contact from './ContactMe/ContactMe';
+
 
 export default function Home() {
   const { theme, setTheme } = useTheme();
+
+  const devImg = `https://firebasestorage.googleapis.com/v0/b/react-e-commerce-app-dycheto.appspot.com/o/developer.svg?alt=media&token=620c3cce-573e-43e9-864f-d9373e0924ff`;
 
   return (
     <>
@@ -73,12 +73,10 @@ export default function Home() {
           transition={{ ease: 'easeInOut', duration: 0.9, delay: 0.2 }}
           className="home-text-right"
         >
-          <img src={developerImg} alt="Developer" />
+          <img src={devImg} alt="Developer" />
         </motion.div>
       </motion.section>
-      {/* <div className="about-me-component">
-        <AboutMe />
-      </div> */}
+      
     </>
 
   );

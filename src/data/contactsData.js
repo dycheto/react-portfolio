@@ -14,14 +14,14 @@ export const contactsData = [
     },
     {
         id: 3,
-        name: 'GitHub',
+        name: 'github.com/Dycheto',
         icon: <FiGithub />,
-        url: 'https://github.com/Dycheto',
+        link: 'https://github.com/Dycheto',
     },
     {
         id: 4,
-        name: 'LinkedIn',
+        name: 'linkedin.com/in/tihomir-dukov-232237266',
         icon: <FiLinkedin />,
-        url: 'https://www.linkedin.com/in/tihomir-dukov-232237266',
+        link: 'https://linkedin.com/in/tihomir-dukov-232237266',
     },
 ];
