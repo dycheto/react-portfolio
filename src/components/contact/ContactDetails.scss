@@ -1,78 +1,53 @@
 .contact-details {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 2rem;
-    background-color: #FFFFFF;
-    color: #333333;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    margin-top: 40px;
-  
-    &__heading {
-      font-size: 2.5rem;
-      font-weight: 600;
-      margin-bottom: 2rem;
-      color: #333333;
-    }
-  
-    &__list {
+  margin: 0 auto;
+  max-width: 400px;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+
+  @media only screen and (max-width: 768px) {
+    margin-top: 80px;
+    max-width: 300px;
+  }
+  @media only screen and (max-width: 480px) {
+    max-width: 300px;
+  }
+
+  &__heading {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  &__list {
+    padding: 0;
+    margin: 0;
+
+    &__item {
       list-style: none;
-      padding: 0;
-      margin: 0;
-  
-      &__item {
-        display: flex;
-        align-items: center;
-        margin-bottom: 1.5rem;
-  
-        &__icon {
-          font-size: 2rem;
-          margin-right: 1rem;
-          color: #0077FF;
-        }
-  
-        &__details {
-          font-size: 1.6rem;
-          color: #333333;
-          font-weight: 600;
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+
+      &__icon {
+        margin-right: 10px;
+        font-size: 1.5rem;
+      }
+
+      &__details {
+        font-size: 1.2rem;
+
+        a {
+          color: #333;
           text-decoration: none;
-          transition: color 0.2s ease;
-  
+
           &:hover {
-            color: #0077FF;
-          }
-        }
-      }
-    }
-  
-    &--dark {
-      background-color: #333333;
-      color: #FFFFFF;
-      box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
-  
-      &__heading {
-        color: #FFFFFF;
-      }
-  
-      &__list {
-        &__item {
-          &__icon {
-            color: #0077FF;
-          }
-  
-          &__details {
-            color: #CCCCCC;
-  
-            &:hover {
-              color: #0077FF;
-            }
+            color: #0077b5;
           }
         }
       }
     }
   }
-  
+}
