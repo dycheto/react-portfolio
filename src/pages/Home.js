@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { FiArrowDownCircle } from 'react-icons/fi';
 import developerImg from '../images/developer.svg';
 import { useTheme } from '../hooks/useTheme';
-
+import Button from '../components/reusable/Button';
 
 export default function Home() {
   const { theme, setTheme } = useTheme();
@@ -60,10 +60,11 @@ export default function Home() {
               className="home-download-button"
               aria-label="Download Resume"
             >
-              <FiArrowDownCircle className="download-icon"></FiArrowDownCircle>
-              <span className={`font-general-medium ${theme === 'dark' ? 'text-white' : ''}`}>
-                Download CV
-              </span>
+              {/* <FiArrowDownCircle className="download-icon"></FiArrowDownCircle> */}
+              <h1 className={`font-general-medium ${theme === 'dark' ? 'text-white' : ''}`}>
+                Resume
+              </h1>
+
             </a>
           </motion.div>
         </div>
@@ -76,7 +77,7 @@ export default function Home() {
           <img src={devImg} alt="Developer" />
         </motion.div>
       </motion.section>
-      
+
     </>
 
   );

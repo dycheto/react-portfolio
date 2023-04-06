@@ -63,6 +63,14 @@
   border-radius: 8px;
   text-decoration: none;
   transition: all 0.2s ease-in-out;
+  width: 70px;
+  height: 40px;
+  align-items: center;
+}
+.font-general-medium {
+  align-items: center;
+  text-align: center;
+  font-size: 140%;
 }
 
 @media (max-width: 768px) {
